@@ -1,0 +1,84 @@
+Skenario Testing -> Unit Testing
+
+LoginViewModelTest::class
+1. Login success and result success
+- Memastikan mengembalikan Result.Success
+- Memastikan bahwa login berhasil dipanggil
+- Memastikan response tidak bernilai null
+- Memastikan bahwa method login telah dipanggil
+- memastikan actual response dan dummy sama
+
+2. Login failed and result error
+- Memastikan bahwa login berhasil dipanggil
+- Memastikan response tidak bernilai null
+- Memastikan mengembalikan Result.Error
+
+3. Save data user successfully
+- Memastikan bahwa data user berhasil disimpan
+
+4. Get Session user successfully
+- Memastikan mendapatkan session user
+
+5. Save token successfully
+- Memastikan bahwa token berhasil disimpan
+
+6. Set logout successfully
+- Memastikan bahwa logout berhasil
+=======================================================================
+
+RegisterViewModelTest::class
+1. Register and Result Success
+- Memastikan mengembalikan Result.Success
+- Memastikan response tidak bernilai null
+- Memastikan bahwa method registerViewModel.register telah dipanggil
+- memastikan actual response dan dummy sama
+
+2. Register failed and Result Error
+- Memastikan response tidak bernilai null
+- Memastikan mengembalikan Result.Error
+
+=======================================================================
+
+MainViewModelTest::class
+1. When get list story should not null
+- Memastikan data dengan paging berhasil dipanggil
+- Memastikan data tidak bernilai null
+- Memastikan jumlah data dummy dan aktual sama
+
+=======================================================================
+
+StoryMapsViewModelTest::class
+1. When get Maps story should not null and return success
+- Memastikan data tidak bernilai null
+- Memastikan response mengembalikan Result.Success
+- Memastikan data dummy sama dengan aktual
+- Memastikan jumlah data sama
+
+2. When network error should return error
+- Memastikan data tidak bernilai null
+- Memastikan mengembalikan Result.Error
+
+=======================================================================
+
+StoryRepositoryTest::class
+1. Get stories should not null
+- Memastikan bahwa data story berhasil dan tidak null
+
+2. Upload story successfully
+- Memastikan upload story berhasil dan response tidak null
+- Memastikan response aktual sama dengan expected response
+
+=======================================================================
+
+MainRepositoryTest::class
+1. Stories location Should Not Null
+- Memastikan bahwa data tidak null
+- Memastikan bahwa data aktual sama dengan data expected
+
+2. Login response Should Not Null
+- Memastikan bahwa response tidak null
+- Memastikan bahwa data dummy sama dengan data aktual
+
+3. Register response Should Not Null
+- Memastikan bahwa response tidak null
+- Memastikan bahwa data dummy sama dengan data aktual
